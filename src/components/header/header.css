@@ -1,0 +1,7 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Fira Code", monospace !important;
+    font-optical-sizing: auto;
+}

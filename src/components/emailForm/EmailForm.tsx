@@ -23,7 +23,7 @@ const EmailForm = () => {
 
     return (
         <Box sx={{textAlign: 'center'}}>
-            <Typography color='primary'  variant='h5'>Email Send</Typography>
+            <Typography color='primary'  variant='h4' sx={{pb: 1}}>Email Send</Typography>
             <Formik
                 initialValues={{ from_name: '', to_email: '', message: '' }}
                 validationSchema={EmailValidationSchema}

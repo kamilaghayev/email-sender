@@ -2,6 +2,8 @@ import { Button, Container } from "@mui/material"
 import { useState } from "react"
 import "./App.css"
 import ModalForEmail from "../components/modalForEmail"
+import SnackModal from "../hoc/SnackModal/SnackModal"
+import EmailSnackBar from "../components/emailSnackbar"
 
 const App = () => {
     const [open, setOpen] = useState<boolean>(false)
@@ -15,7 +17,10 @@ const App = () => {
     return (
         <Container>
             <Button variant='contained' onClick={handleOpen}>open</Button>
-            <ModalForEmail open={open} onClose={handleClose}/>
+            <SnackModal>
+                <ModalForEmail open={open} onClose={handleClose}/>
+                <EmailSnackBar/>
+            </SnackModal>
         </Container>
     )
 }

@@ -25,7 +25,7 @@ const ModalForEmail = ({open, onClose}: ModalProps) => {
             aria-labelledby="child-modal-title"
             aria-describedby="child-modal-description"
         >
-            <Box sx={{...style, width: '300px'}}>
+            <Box sx={{...style, width: '280px'}}>
                 <EmailForm/>
             </Box>
         </Modal>
